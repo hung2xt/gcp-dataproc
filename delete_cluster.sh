@@ -3,4 +3,4 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 
-gcloud dataproc clusters delete ch6cluster --region $1
+gcloud dataproc clusters delete <CLUSTER_NAME> --region $1
