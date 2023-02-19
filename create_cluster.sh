@@ -16,7 +16,7 @@ sed "s/CHANGE_TO_USER_NAME/dataproc/g" install_on_cluster.sh > /tmp/install_on_c
 gsutil cp /tmp/install_on_cluster.sh $INSTALL
 
 # create cluster
-gcloud dataproc clusters create ch6cluster \
+gcloud dataproc clusters create <CLUSTER_NAME> \ #scpecial your cluster name
   --enable-component-gateway \
   --region ${REGION} --zone ${REGION}-a \
   --master-machine-type n1-standard-4 \
