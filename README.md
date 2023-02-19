@@ -18,7 +18,7 @@ In CloudShell:
 ### Interactive development
 * Navigate to the Dataproc section of the GCP web console and click on "Web Interfaces".
 
-* Click on JupyterLab
+* Click on JupyterLab on the folders examples
 
 * Open quantization.ipynb. Click Run | Clear All Outputs. Then run the cells one by one.
  
