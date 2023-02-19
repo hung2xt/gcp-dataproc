@@ -1,19 +1,6 @@
 # Bayes Classifier on GCP Dataproc
 
-To repeat the steps in this chapter, follow these steps.
-
-
-The simplest way to catch up is to copy data from the bucket:
-* Open CloudShell and git clone this repo:
-    ```
-    git clone https://github.com/hung2xt/gcp-dataproc.git
-    ```
-* Go to the 02_ingest folder of the repo, run the program ./ingest_from_crsbucket.sh and specify your bucket name.
-* Go to the 04_streaming folder of the repo, run the program ./ingest_from_crsbucket.sh and specify your bucket name.
-* Go to the 05_bqnotebook folder of the repo, run the script to load data into BigQuery:
-	```
-	bash create_trainday.sh BUCKET-NAME
-	```
+Please follow these steps.
 
 ### Create Dataproc cluster
 In CloudShell:
@@ -24,7 +11,7 @@ In CloudShell:
 * Create the Dataproc cluster to run jobs on, specifying the name of your bucket and a 
   zone in the region that the bucket is in. (You created this bucket in Chapter 2)
    ```
-    ./create_cluster.sh <BUCKET-NAME>  <COMPUTE-ZONE>
+    ./create_cluster.sh <BUCKET-NAME><COMPUTE-ZONE>
     ```
 *Note:* Make sure that the compute zone is in the same region as the bucket, otherwise you will incur network egress charges.
 
